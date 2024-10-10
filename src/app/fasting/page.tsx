@@ -18,7 +18,7 @@ export default function FastingPage() {
 	}
 
 	return (
-		<main className='flex justify-center items-center pt-8'>
+		<main className='flex justify-center items-center'>
 			<button
 				className='w-32 h-32 rounded-full bg-green-600 font-semibold text-white text-lg active:scale-90 transition-transform duration-150'
 				onClick={handleClick}

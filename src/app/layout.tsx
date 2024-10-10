@@ -27,19 +27,13 @@ export default function RootLayout({
 	return (
 		<html lang='en'>
 			<body
-				className={`bg-slate-200 text-stone-900 ${geistSans.variable} ${geistMono.variable} antialiased`}
+				className={`bg-white text-stone-900 ${geistSans.variable} ${geistMono.variable} antialiased`}
 			>
-				<header className='flex bg-blue-500 text-white p-1 shadow-md'>
-					<div className='flex items-center ml-4'>
-						<div className='pear'></div>
-						<h1 className='text-xl ml-2'>Healthy Life App</h1>
-					</div>
-				</header>
-				<div className='flex flex-col md:flex-row md:overflow-hidden'>
+				<div className='flex h-screen flex-col md:flex-row md:overflow-hidden'>
 					<div className='w-full flex-none md:w-64'>
 						<SideNav />
 					</div>
-					<div className='flex-grow md:overflow-y-auto md:p-12'>
+					<div className='grow p-6 md:overflow-y-auto md:p-12'>
 						{children}
 					</div>
 				</div>
