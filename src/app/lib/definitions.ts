@@ -1,6 +1,13 @@
 export type Fasting = {
     id: string
     user_id: string
-    start: Date
-    end: Date
+    date_start: Date
+    date_end: Date
+}
+
+export type User = {
+    id: string
+    name: string
+    email: string
+    password: string
 }
